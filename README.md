@@ -10,14 +10,14 @@ When first loading the webpage the user is greeted with the following screen:
 
 Once the correct login details have been entered the user is taken to the store:
 
-![alt text](example/MainPageOfStore.jpg)
+![alt text](example/MainPageOfStore.JPG)
 
 The user can then select which albums they would like to purchase and proceed to the checkout area:
 
-![alt text](example/checkout.jpg)
+![alt text](example/checkout.JPG)
 
 The above is an example of the general use for a customer. If an admin logs into the store they are greeted with the following:
 
-![alt text](example/adminpage.jpg)
+![alt text](example/adminpage.JPG)
 
 From here the admin can execute a variety of operations on the stores inventory.
