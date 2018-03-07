@@ -1,5 +1,11 @@
 # Record Store
 
+UPDATE 3/7/2018:
+
+I have added a background image to the project as well as changed the font color. Other minor changes to the look and feel of the page have been made as well. Some of the changes are evident here in this updated look at the login page. Screenshots from the rest of the webpage are soon to come.
+
+![alt text](example/updatedLogin.png)
+
 (To be updated)
 
 This project is a webpage for a fictitious record store. I do not own any of the images used in this project, they are simply used for demonstrative purposes. 
