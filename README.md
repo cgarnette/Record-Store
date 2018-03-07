@@ -4,7 +4,7 @@ UPDATE 3/7/2018:
 
 I have added a background image to the project as well as changed the font color. Other minor changes to the look and feel of the page have been made as well. Some of the changes are evident here in this updated look at the login page. Screenshots from the rest of the webpage are soon to come.
 
-![alt text](example/updatedLogin.png)
+![alt text](example/updatedLogin.PNG)
 
 (To be updated)
 
