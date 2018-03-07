@@ -6,7 +6,7 @@ The webpage connects to an SQL server running on the host server. The SQL db sto
 
 When first loading the webpage the user is greeted with the following screen:
 
-![alt text](example/NormalLogin.jpg)
+![alt text](example/NormalLogin.JPG)
 
 Once the correct login details have been entered the user is taken to the store:
 
