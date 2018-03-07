@@ -1,5 +1,7 @@
 # Record Store
 
+(To be updated)
+
 This project is a webpage for a fictitious record store. I do not own any of the images used in this project, they are simply used for demonstrative purposes. 
 
 The webpage connects to an SQL server running on the host server. The SQL db stores the credentials for all users of the store. This includes an admin account which can access the database in order to add, remove, and update product entries.
