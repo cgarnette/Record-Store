@@ -72,10 +72,10 @@ unset($_SESSION['email']);
 		 		$_SESSION['email'] = $email;
 				if(checkAdmin() == TRUE){
 					$page = "admin"
-					include "flip.php"
+					include "bin/flip.php"
 				}else{
 					$page = "store"
-					include "flip.php"
+					include "bin/flip.php"
 					//header('Location: http://localhost/week7/store.php');
 
 				}
