@@ -71,19 +71,12 @@ unset($_SESSION['email']);
 			if($results == 1){ 
 		 		$_SESSION['email'] = $email;
 				if(checkAdmin() == TRUE){
-<<<<<<< HEAD
 					$page = "admin"
 					include "flip.php"
 				}else{
 					$page = "store"
 					include "flip.php"
 					//header('Location: http://localhost/week7/store.php');
-=======
-					header('Location: pages/admin.php');
-				}else{
-
-					header('Location: pages/store.php');
->>>>>>> c052bfebdd1d59b15bcb6634a167c884c71ab400
 
 				}
 		
