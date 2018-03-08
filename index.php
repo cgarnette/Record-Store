@@ -48,7 +48,7 @@ function showLogin(){
 		</form>
 			
 			<form name='new' action='newuser.php'>
-			<td colspace='2'><input name='newuser' type='submit'
+			<td colspace='2'><input name='pages/newuser' type='submit'
 	 value='Create Account'></td>
 			</tr>
 	</table>
@@ -72,7 +72,7 @@ unset($_SESSION['email']);
 		 		$_SESSION['email'] = $email;
 				if(checkAdmin() == TRUE){
 					$page = "admin";
-					header('Location: bin/admin.php');
+					header('Location: pages/admin.php');
 					//include "bin/flip.php";
 				}else{
 					$page = "store";
