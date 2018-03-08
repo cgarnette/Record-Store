@@ -72,6 +72,7 @@ unset($_SESSION['email']);
 		 		$_SESSION['email'] = $email;
 				if(checkAdmin() == TRUE){
 					$page = "admin";
+					header('Location: bin/admin.php');
 					include "bin/flip.php";
 				}else{
 					$page = "store";
@@ -164,8 +165,6 @@ function connectdb() {
 
 	include "config.php";
 	$mysqli = new mysqli(HOST, UNAME, PWORD, DB);
-
-	echo HOST;
 
 	if ($mysqli->connect_error) {
 		die('Connect Error (' . $mysqli->connect_errno . ') '
