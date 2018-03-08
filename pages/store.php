@@ -1,3 +1,7 @@
+<?php
+session_start();
+?>
+
 <html>
 
 	<style>
@@ -11,9 +15,8 @@
 <head>
 
 <?php
-	session_start();
 	if(isset($_SESSION['name'])){
-		echo '<h3>Welcome to the Store '.$_SESSION['name'].' </h3></br><form action="login.php" method="post"><input name="btnlogout" type="submit" value="logout"></form>';
+		echo '<h3>Welcome to the Store '.$_SESSION['name'].' </h3></br><form action="../index.php" method="post"><input name="btnlogout" type="submit" value="logout"></form>';
 		
 		start();
 	}else{

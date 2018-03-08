@@ -1,3 +1,7 @@
+<?php
+session_start();
+?>
+
 <html>
 
 	<style>
@@ -37,30 +41,23 @@ function checkValues(){
 }
 
 function checkUser(){
-session_start();
 unset($_SESSION['name']);
 unset($_SESSION['email']);
 
-echo 'step 0';
 	if(isset($_POST["firstname"])){
-echo 'step 1';
+
 		if(isset($_POST["lastname"])){
-echo 'step 2';
+
 			if(isset($_POST["email"])){
-echo 'step 3';
+
 				if(isset($_POST["password"])){
-					echo 'step 4';
 					$size = getSize();
 					$customer = new CustomerClass($size, $_POST["firstname"], $_POST["lastname"], $_POST["email"], $_POST["password"]);
-					echo 'step 4.5';
 					if(checkNew($customer) > 0){
 						//showRegistration();
 						echo "<h2>This email has already been used</h2>";
 					}else{
-						echo 'step 5';
 						if(checkValues()===TRUE){
-
-							echo 'inserting customer into db';
 							
 							$_SESSION['name'] = $firstname; 
 		 					$_SESSION['email'] = $email;
