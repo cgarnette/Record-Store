@@ -1,2 +1,2 @@
-username=XXXXXXpassword=XXXXXX
-host=XXXXXXXdb=XXXXX
+username=robindbpassword=#weareRobin95
+host=den1.mysql6.gear.hostdb=robindb
