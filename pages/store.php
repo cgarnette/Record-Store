@@ -39,7 +39,8 @@ session_start();
 
 <?php
 	if(isset($_SESSION['name'])){
-		echo '<h3>Welcome to the Store '.$_SESSION['name'].' </h3></br><form action="../index.php" method="post"><input name="btnlogout" type="submit" value="logout"></form>';
+
+		echo '<div class="logout"><h3>Welcome to the Store '.$_SESSION['name'].' </h3></br><form action="../index.php" method="post"><input name="btnlogout" type="submit" value="logout"></form></div>';
 		
 		start();
 	}else{
