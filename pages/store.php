@@ -16,6 +16,20 @@ session_start();
 			padding-right: 20px;
 			padding-left: 20px;
 		}
+
+		.checkout{
+			width: 600px;
+			height: 600px;
+			left: 50%;
+			margin-left: -300px;
+		}
+
+		.products{
+			width: 600px;
+			height: 600px;
+			left: 50%;
+			margin-left: -300px;
+		}
     </style>
 <head>
 
@@ -61,7 +75,7 @@ function loadStore(){
 	$result = $mysqli->query($mysearch);
 	$i = 0;
 
-	echo "<table><form action='store.php' method='post'>
+	echo "<form action='store.php' method='post'> <div class='products'><table>
 		<tr>";
 	while($row = $result->fetch_assoc()){
 		if($i < 5){
@@ -74,8 +88,11 @@ function loadStore(){
 	}
 	$mysqli->close();
 
-	echo "<tr>
-  <td colspace='3' align='center'><input name='btncheckout' type='submit' value='Checkout'></td></tr></form></table>";
+	echo "</div></tr></table>
+	<div class='checkout'>
+		<input name='btncheckout' type='submit' value='Checkout'>
+	</div>
+	</form>";
 }
 
 function connectdb() {
