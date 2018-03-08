@@ -163,7 +163,7 @@ function connectdb() {
 	//$mydbparms->getPassword(),$mydbparms->getDb());
 
 	include "config.php";
-	$mysqli = new mysqli(HOST, UNAME, PWORD, DB)
+	$mysqli = new mysqli(HOST, UNAME, PWORD, DB);
 
 	echo HOST;
 
