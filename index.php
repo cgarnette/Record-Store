@@ -73,7 +73,7 @@ unset($_SESSION['email']);
 				if(checkAdmin() == TRUE){
 					$page = "admin";
 					header('Location: bin/admin.php');
-					include "bin/flip.php";
+					//include "bin/flip.php";
 				}else{
 					$page = "store";
 					include "bin/flip.php";
