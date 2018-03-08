@@ -14,7 +14,7 @@ session_start();
     </style>
 
 	<script>
-		function myFunction(x) {
+		function myFunction(x, y) {
     		var myWindow = window.open("", x, "width=200,height=100");
 		}
 	</script>
