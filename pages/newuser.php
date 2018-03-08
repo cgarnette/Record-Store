@@ -55,6 +55,8 @@ unset($_SESSION['email']);
 						echo "<h2>This email has already been used</h2>";
 					}else{
 						if(checkValues()===TRUE){
+
+							echo 'inserting customer into db';
 							
 							$_SESSION['name'] = $firstname; 
 		 					$_SESSION['email'] = $email;
@@ -95,7 +97,7 @@ function showRegistration(){
 		</tr>
 
 		
-		<td colspace='2' align='center'><input name='createuser' 				type='submit' value='Submit'></td>
+		<td colspace='2' align='center'><input name='createuser' type='submit' value='Submit'></td>
 
 		</form>
 	</table>";
