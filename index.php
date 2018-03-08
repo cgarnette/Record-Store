@@ -76,8 +76,7 @@ unset($_SESSION['email']);
 					//include "bin/flip.php";
 				}else{
 					$page = "store";
-					include "bin/flip.php";
-					//header('Location: http://localhost/week7/store.php');
+					header('Location: pages/store.php');
 
 				}
 		
