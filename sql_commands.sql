@@ -1,3 +1,5 @@
+USE robindb;
+
 CREATE TABLE Customers (
 IDnum int primary key,
 firstName varchar (15),
@@ -8,13 +10,13 @@ passwd varchar(20)
 
 CREATE TABLE Products (
 ProdId int primary key,
-name varchar (30),
+name varchar (70),
 description varchar (150),
 price decimal(10,2),
 image varchar(15)
 );
 
---Create Admin
+/*Create Admin*/
 insert into Customers
 values(0, 'Admin', 'Admin', 'admin@jukebox.com', 'beyonce1232');
 
