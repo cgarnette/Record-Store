@@ -11,13 +11,12 @@ session_start();
 			background-repeat: no-repeat;
 			color: white;				
 		}
-    </style>
 
-	<script>
-		function myFunction(x, y) {
-    		var myWindow = window.open("", x, "width=200,height=100");
+		img{
+			padding-right: 20px;
+			padding-left: 20px;
 		}
-	</script>
+    </style>
 <head>
 
 <?php
@@ -65,11 +64,11 @@ function loadStore(){
 	echo "<table><form action='store.php' method='post'>
 		<tr>";
 	while($row = $result->fetch_assoc()){
-		if($i < 3){
-			echo "<td colspan=2><img src=../" . $row['image'] . " width='100' height='100' onClick='alert(".$row['name'].")'></br>" . $row['name'] . "</br>$" . $row['price'] . "</br>" ."<input type='checkbox' name='music[]' value='" . $row['price'] . "'></td>";
-		}if($i == 3){
+		if($i < 5){
+			echo "<td colspan=2><img src=../" . $row['image'] . " width='100' height='100'></br>" . $row['name'] . "</br>$" . $row['price'] . "</br>" ."<input type='checkbox' name='music[]' value='" . $row['price'] . "'></td>";
+		}if($i == 5){
 			$i = 0;
-			echo "</tr><tr><td colspan=2><img src=../" . $row['image'] . " width='100' height='100' onClick='alert(".$row['name'].")'></br>" . $row['name'] . "</br>$" . $row['price'] . "</br>" ."<input type='checkbox' name='music[]' value='" . $row['price'] . "'></td>";
+			echo "</tr><tr><td colspan=2><img src=../" . $row['image'] . " width='100' height='100'></br>" . $row['name'] . "</br>$" . $row['price'] . "</br>" ."<input type='checkbox' name='music[]' value='" . $row['price'] . "'></td>";
 		}
 		$i = $i + 1;
 	}
