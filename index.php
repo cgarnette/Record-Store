@@ -35,7 +35,7 @@ function showLogin(){
 			</tr>
 			
 			<tr><td>Password: </td>
-			  <td><input name='password' type='text' size='50'></td>
+			  <td><input name='password' type='password' size='50'></td>
 			</tr>
 			
 			</table>
