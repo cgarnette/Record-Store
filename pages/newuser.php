@@ -52,7 +52,7 @@ echo 'step 3';
 					echo 'step 4';
 					$size = getSize();
 					$customer = new CustomerClass($size, $_POST["firstname"], $_POST["lastname"], $_POST["email"], $_POST["password"]);
-					echo 'step 4.5'
+					echo 'step 4.5';
 					if(checkNew($customer) > 0){
 						//showRegistration();
 						echo "<h2>This email has already been used</h2>";
