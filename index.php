@@ -71,10 +71,10 @@ unset($_SESSION['email']);
 			if($results == 1){ 
 		 		$_SESSION['email'] = $email;
 				if(checkAdmin() == TRUE){
-					header('Location: http://localhost/week7/admin.php');
+					header('Location: pages/admin.php');
 				}else{
 
-					header('Location: http://localhost/week7/store.php');
+					header('Location: pages/store.php');
 
 				}
 		
