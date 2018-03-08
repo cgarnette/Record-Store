@@ -20,9 +20,7 @@ session_start();
 		
 		start();
 	}else{
-		print_r($_SESSION);
-		echo 'something went wrong';
-		//header('Location: ../index.php');
+		header('Location: ../index.php');
 	}
 	
 ?>
