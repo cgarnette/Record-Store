@@ -63,7 +63,7 @@ unset($_SESSION['email']);
 		 					$_SESSION['email'] = $email;
 							$_SESSION['ID'] = $size;
 							insertCustomer($customer);
-							header('location: store.php');
+							header('location: ../index.php');
 						}
 						
 					}
@@ -143,7 +143,7 @@ echo "<h2>beginning insertion process</h2>";
 	$stmt->close();
 
     	echo "New record created successfully";
-	header('Location: store.php');
+	header('Location: ../index.php');
 
 	$mysqli->close();
 	return $Success;
