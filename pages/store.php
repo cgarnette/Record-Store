@@ -22,8 +22,7 @@ session_start();
 		}
 
 		.checkout{
-			width: 600px;
-			height: 600px;
+			position: absolute;
 			left: 50%;
 			margin-left: -300px;
 		}
@@ -80,7 +79,7 @@ function loadStore(){
 	$result = $mysqli->query($mysearch);
 	$i = 0;
 
-	echo "<form action='store.php' method='post'> <div><table>
+	echo "<form action='store.php' method='post'> <div class='checkout'><table>
 		<tr>";
 	while($row = $result->fetch_assoc()){
 		if($i < 5){
