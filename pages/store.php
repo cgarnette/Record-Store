@@ -88,7 +88,7 @@ function loadStore(){
 	}
 	$mysqli->close();
 
-	echo "</div></tr></table>
+	echo "</tr></table></div>
 	<div class='checkout'>
 		<input name='btncheckout' type='submit' value='Checkout'>
 	</div>
