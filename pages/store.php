@@ -12,6 +12,10 @@ session_start();
 			color: white;				
 		}
 
+		.logout {
+			float: right;
+		}
+
 		img{
 			padding-right: 20px;
 			padding-left: 20px;
