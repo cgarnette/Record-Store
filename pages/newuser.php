@@ -41,13 +41,15 @@ session_start();
 unset($_SESSION['name']);
 unset($_SESSION['email']);
 
+echo 'step 0';
 	if(isset($_POST["firstname"])){
-
+echo 'step 1';
 		if(isset($_POST["lastname"])){
-
+echo 'step 2';
 			if(isset($_POST["email"])){
-
+echo 'step 3';
 				if(isset($_POST["password"])){
+					echo 'step 4';
 					$size = getSize();
 					$customer = new CustomerClass($size, $_POST["firstname"], $_POST["lastname"], $_POST["email"], $_POST["password"]);
 					if(checkNew($customer) > 0){
