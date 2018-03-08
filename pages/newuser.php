@@ -56,6 +56,7 @@ echo 'step 3';
 						//showRegistration();
 						echo "<h2>This email has already been used</h2>";
 					}else{
+						echo 'step 5'
 						if(checkValues()===TRUE){
 
 							echo 'inserting customer into db';
