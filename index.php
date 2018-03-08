@@ -47,8 +47,8 @@ function showLogin(){
 			<td colspace='2'><input name='btnsubmit' type='submit' value='Login'></td>
 		</form>
 			
-			<form name='new' action='newuser.php'>
-			<td colspace='2'><input name='pages/newuser.php' type='submit'
+			<form name='new' action='pages/newuser.php'>
+			<td colspace='2'><input name='newuser' type='submit'
 	 value='Create Account'></td>
 			</tr>
 	</table>
