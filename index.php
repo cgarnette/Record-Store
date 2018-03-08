@@ -29,7 +29,7 @@ function showLogin(){
 	echo "<div class = 'center'>
 	<table>
 
-			<form name='main' method='post' action='login.php'>
+			<form name='main' method='post' action='index.php'>
 			<tr><td>Email Address: </td>
 			<td><input name='email' type='text' size='50'></td>
 			</tr>
@@ -47,7 +47,7 @@ function showLogin(){
 			<td colspace='2'><input name='btnsubmit' type='submit' value='Login'></td>
 		</form>
 			
-			<form name='new' action='newuser.php'>
+			<form name='new' action='pages/newuser.php'>
 			<td colspace='2'><input name='newuser' type='submit'
 	 value='Create Account'></td>
 			</tr>
@@ -71,10 +71,12 @@ unset($_SESSION['email']);
 			if($results == 1){ 
 		 		$_SESSION['email'] = $email;
 				if(checkAdmin() == TRUE){
-					header('Location: http://localhost/week7/admin.php');
+					$page = "admin"
+					include "flip.php"
 				}else{
-
-					header('Location: http://localhost/week7/store.php');
+					$page = "store"
+					include "flip.php"
+					//header('Location: http://localhost/week7/store.php');
 
 				}
 		
