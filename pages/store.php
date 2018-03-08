@@ -17,7 +17,7 @@ session_start();
 			padding-left: 20px;
 		}
 
-		div{
+		.checkout{
 			width: 600px;
 			height: 600px;
 			left: 50%;
