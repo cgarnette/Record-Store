@@ -29,7 +29,7 @@ function showLogin(){
 	echo "<div class = 'center'>
 	<table>
 
-			<form name='main' method='post' action='login.php'>
+			<form name='main' method='post' action='index.php'>
 			<tr><td>Email Address: </td>
 			<td><input name='email' type='text' size='50'></td>
 			</tr>
