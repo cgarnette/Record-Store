@@ -2,7 +2,7 @@
 
 	<style>
 		body {
-			background-image: url("images\\backgrnd.jpg");
+			background-image: url("../images\\backgrnd.jpg");
 			background-size: cover;
 			background-repeat: no-repeat;
 			color: white;				
@@ -16,7 +16,7 @@
 		echo '<h3>Admin Page</h3>';
 		//showProducts();
 	}else{
-		header('Location: http://localhost/week7/login.php');
+		header('Location: ../index.php');
 	}
 	
 ?>
