@@ -28,6 +28,7 @@ session_start();
 	}else{
 		header('Location: ../index.php');
 	}
+	//onClick='myFunction(".$row['name'].", ".$row['description'].")'>
 	
 ?>
 	
@@ -65,10 +66,10 @@ function loadStore(){
 		<tr>";
 	while($row = $result->fetch_assoc()){
 		if($i < 3){
-			echo "<td colspan=2><img src=../" . $row['image'] . " width='100' height='100' onclick='myFunction(".$row['name'].", ".$row['description'].")'></br>" . $row['name'] . "</br>$" . $row['price'] . "</br>" ."<input type='checkbox' name='music[]' value='" . $row['price'] . "'></td>";
+			echo "<td colspan=2><img src=../" . $row['image'] . " width='100' height='100' onClick='alert(".$row['name'].")'></br>" . $row['name'] . "</br>$" . $row['price'] . "</br>" ."<input type='checkbox' name='music[]' value='" . $row['price'] . "'></td>";
 		}if($i == 3){
 			$i = 0;
-			echo "</tr><tr><td colspan=2><img src=../" . $row['image'] . " width='100' height='100' onclick='myFunction(".$row['name'].", ".$row['description'].")'></br>" . $row['name'] . "</br>$" . $row['price'] . "</br>" ."<input type='checkbox' name='music[]' value='" . $row['price'] . "'></td>";
+			echo "</tr><tr><td colspan=2><img src=../" . $row['image'] . " width='100' height='100' onClick='alert(".$row['name'].")'></br>" . $row['name'] . "</br>$" . $row['price'] . "</br>" ."<input type='checkbox' name='music[]' value='" . $row['price'] . "'></td>";
 		}
 		$i = $i + 1;
 	}
