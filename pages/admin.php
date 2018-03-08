@@ -29,7 +29,7 @@
 <?php
 
 $delete = false;
-remove();
+showProducts();
 
 //After performing a delete there may be an inconsistency with the IDs. this method fixes that
 function updateID(){
