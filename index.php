@@ -47,7 +47,7 @@ function showLogin(){
 			<td colspace='2'><input name='btnsubmit' type='submit' value='Login'></td>
 		</form>
 			
-			<form name='new' action='newuser.php'>
+			<form name='new' action='bin/newuser.php'>
 			<td colspace='2'><input name='newuser' type='submit'
 	 value='Create Account'></td>
 			</tr>
@@ -71,11 +71,11 @@ unset($_SESSION['email']);
 			if($results == 1){ 
 		 		$_SESSION['email'] = $email;
 				if(checkAdmin() == TRUE){
-					$page = "admin"
-					include "bin/flip.php"
+					$page = "admin";
+					include "bin/flip.php";
 				}else{
-					$page = "store"
-					include "bin/flip.php"
+					$page = "store";
+					include "bin/flip.php";
 					//header('Location: http://localhost/week7/store.php');
 
 				}
