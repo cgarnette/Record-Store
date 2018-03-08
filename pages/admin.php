@@ -100,11 +100,14 @@ function getDbparms()
 
 function connectdb() {
 	// Get the DBParameters
-	$mydbparms = getDbparms();
+	//$mydbparms = getDbparms();
 
 	// Try to connect
-	$mysqli = new mysqli($mydbparms->getHost(), $mydbparms->getUsername(),
-	$mydbparms->getPassword(),$mydbparms->getDb());
+	//$mysqli = new mysqli($mydbparms->getHost(), $mydbparms->getUsername(),
+	//$mydbparms->getPassword(),$mydbparms->getDb());
+
+	include "../config.php";
+	$mysqli = new mysqli(HOST, UNAME, PWORD, DB);
 
 	if ($mysqli->connect_error) {
 		die('Connect Error (' . $mysqli->connect_errno . ') '
