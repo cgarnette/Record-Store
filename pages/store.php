@@ -78,7 +78,7 @@ function loadStore(){
 	$result = $mysqli->query($mysearch);
 	$i = 0;
 
-	echo "<div class='products'><table>
+	echo "<div class='products'><form action='store.php' method='post'><table>
 		<tr>";
 	while($row = $result->fetch_assoc()){
 		if($i < 5){
@@ -93,7 +93,6 @@ function loadStore(){
 
 	echo "</tr></table></div>
 	<div class='checkout'>
-	<form action='store.php' method='post'>
 		<input name='btncheckout' type='submit' value='Checkout'>
 		</form>
 	</div>";
