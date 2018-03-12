@@ -91,11 +91,9 @@ function loadStore(){
 	}
 	$mysqli->close();
 
-	echo "</tr></table></div>
-	<div class='checkout'>
-		<input name='btncheckout' type='submit' value='Checkout'>
-		</form>
-	</div>";
+	echo "</tr>
+		<tr><td><input name='btncheckout' type='submit' value='Checkout'></td></tr></table>
+		</form></div>";
 }
 
 function connectdb() {
