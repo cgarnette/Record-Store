@@ -10,8 +10,8 @@ passwd varchar(20)
 
 CREATE TABLE Products (
 ProdId int primary key,
-name varchar (70),
-description varchar (150),
+name varchar (20),
+description varchar (350),
 price decimal(10,2),
 image varchar(15)
 );
